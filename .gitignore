@@ -1,0 +1,20 @@
+# Ignoruj pliki tymczasowe Pythona
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignoruj środowiska wirtualne
+.env/
+env/
+venv/
+
+# Ignoruj pliki konfiguracyjne IDE (opcjonalnie)
+.vscode/
+.idea/
+
+# Ignoruj pliki logów
+*.log
+
+# Ignoruj pliki systemowe
+.DS_Store
+Thumbs.db
