@@ -18,7 +18,15 @@ class ConfigLoader:
     def load_geometry():
         with open('data/cube_geometry.json') as f:
             data = json.load(f)
-        return data
+        # Ensure all attributes are loaded
+        return {
+            "vertices": data["vertices"],
+            "uvs": data["uvs"],
+            "normals": data["normals"],
+            "tangents": data["tangents"],
+            "bitangents": data["bitangents"],
+            "indices": data.get("indices", [])
+        }
     
     @staticmethod
     def load_texture(path):

@@ -32,4 +32,9 @@ pip3 install -r requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
-
+## Important in Linux based on Ubunut
+**Add this line of code to main.py**
+```bash
+import os
+os.environ["SDL_VIDEO_X11_FORCE_EGL"] = "1"
+```
